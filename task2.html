@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Заказать программу</title>
+  <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+  <div class="page">
+    <div class="form-container">
+      <h1 class="form__title">ЗАКАЗАТЬ ПРОГРАММУ</h1>
+      <p class="form__subtitle">Оставьте заявку и мы свяжемся с вами<br>в ближайшее время!</p>
+      
+      <form class="form" id="order-form">
+        <div class="form__field">
+          <label class="form__label" for="name">Имя</label>
+          <input class="form__input" type="text" id="name" name="name" placeholder="Имя">
+        </div>
+
+        <div class="form__field">
+          <label class="form__label" for="phone">Номер телефона</label>
+          <input class="form__input form__input--valid" type="tel" id="phone" name="phone" value="+7 910 596 59 75" placeholder="Номер телефона">
+        </div>
+
+        <div class="form__field">
+          <label class="form__label" for="email">Email</label>
+          <input class="form__input form__input--error" type="email" id="email" name="email" placeholder="Email">
+        </div>
+
+        <div class="form__field">
+          <label class="form__label" for="company">Компания</label>
+          <input class="form__input" type="text" id="company" name="company" placeholder="Компания">
+        </div>
+
+        <div class="form__field">
+          <label class="form__label" for="comment">Комментарий</label>
+          <textarea class="form__input form__input--textarea" id="comment" name="comment" placeholder="Комментарий"></textarea>
+        </div>
+
+        <button class="form__submit" type="submit">Отправить</button>
+
+        <label class="form__checkbox">
+          <input type="checkbox" checked>
+          <span class="form__checkbox-text">
+            Нажимая кнопку «Отправить», Вы соглашаетесь с 
+            <a href="#" class="form__link">политикой обработки персональных данных</a> 
+          </span>
+        </label>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+
+
